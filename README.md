@@ -18,7 +18,7 @@
 - My database is local (localhost with XAMPP).
 - Added an SQL folder with all the statements --> Create my tables, Alter my tables or Insert data with a hashed password (MD5).
 - I created a registration form as an encryption method was required. Insert statements for hashed-password is under my SQL folder.
-- I was not able to accomplish the Google, Facebook... login but It is something I will explore.
+
 
 ## Task 2
 

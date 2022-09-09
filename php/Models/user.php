@@ -18,7 +18,8 @@ class user
     public function addUser($username, $password, $db)    
     {
     //Insert values with hashed password
-    $sql = "INSERT INTO users(username, password) values (:username, MD5(:password))";
+    // $sql = "INSERT INTO users(username, password) values (:username, MD5(:password))";
+    $sql = "INSERT INTO users(username, password) values (:username, :password)";   
         $pst = $db->prepare($sql);
         $pst->bindParam(':username', $username);
         $pst->bindParam(':password', $password);                      

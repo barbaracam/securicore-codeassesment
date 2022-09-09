@@ -14,9 +14,11 @@ $password='';
 //Add  New Users
 if(isset($_POST['register'])){    
     $username = $_POST['username'];
-    $password = $_POST['password'];    
+    $password = $_POST['password'];  
+	// $hashed_password = password_hash($password , PASSWORD_DEFAULT); 
+	$hashed_password = password_hash($password , PASSWORD_DEFAULT); 
 	//Function call to database
-    $b = $u->addUser($username, $password, $db);
+    $b = $u->addUser($username, $hashed_password, $db);
     if($b){
     	header("Location: login.php");
         exit;
