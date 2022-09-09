@@ -18,4 +18,4 @@ ALTER TABLE `userInfo` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`
 
 
 -- Insert data with a hashed password
-INSERT INTO users(username, password) values ("pepe", MD5("1234"));
+INSERT INTO users(username, password) values ("pepe", "1234");
